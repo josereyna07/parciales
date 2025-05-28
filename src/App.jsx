@@ -21,6 +21,7 @@ const App = () => {
     if (graph.searchNode(cityInput)) return;
     graph.addNode(cityInput.trim());
     setCities([...cities, cityInput.trim()]);
+    setSelectedCity(cityInput.trim());
     setCityInput('');
   };
 
